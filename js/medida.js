@@ -37,12 +37,15 @@ Medida.match = function(valor) {
 Medida.measures = {};
 
 Medida.convertir = function(valor) {
-  
+
   var measures = Medida.measures;
 
   measures.c  = Celsius;
   measures.f = Fahrenheit;
   measures.k = Kelvin;
+  measures.C  = Celsius;
+  measures.F = Fahrenheit;
+  measures.K = Kelvin;
 
   var match = Medida.match(valor);
   if (match) {
@@ -53,9 +56,9 @@ Medida.convertir = function(valor) {
         numero = parseFloat(numero);
         console.log("Valor: " + numero + ", 1º Tipo: " + tipo_from + ", 2º Tipo: " + tipo_to);
 
-          var source = new measures[tipo_from](numero);
-          var target = "to"+measures[tipo_to].name;
-          return source[target]().toFixed(2) + " "+measures[tipo_to].name;
+          var source = new measures[tipo_from](numero); // new Fahrenheit(32)
+          var target = "to" + measures[tipo_to].name; // "toCelsius"
+          return source[target]().toFixed(2) + " " + measures[tipo_to].name; // "0 Celsius"
       }
       else
         return "ERROR! Try something like '4F to K or 50e1K C or 30C TO K' instead";
