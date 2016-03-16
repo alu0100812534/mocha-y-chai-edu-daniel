@@ -1,18 +1,21 @@
-function Medida (valor,tipo)
-{
-  var reg_exp = XRegExp('^(?<valor_re> [+-]?\\d+(\\.\\d+)?([e][+-]?\\d+)?[ ]*) # valor \n' +
-                        '(?<tipo_re> [a-zA-Z]+)                                # tipo  \n'
-                        , 'xi');
 
-  var exp_result = XRegExp.exec(valor, reg_exp);
-    if (exp_result) {
-      this.valor = parseFloat(exp_result[1]);
-      this.tipo = exp_result[2];
-    } else {
-      this.valor = valor;
-      this.tipo = tipo;
-    }
+function Medida (valor, tipo) {
+
+  if(!tipo) {
+    var reg_exp = XRegExp('^(?<valor_re> [+-]?\\d+(\\.\\d+)?([e][+-]?\\d+)?[ ]*) # valor \n' +
+                          '(?<tipo_re> [a-zA-Z]+)                                # tipo  \n'
+                          , 'xi');
+
+    var exp_result = XRegExp.exec(valor, reg_exp);
+    this.valor = parseFloat(exp_result.valor_re);
+    this.tipo = exp_result.tipo_re;
+  } 
+  else {
+    this.valor = valor;
+    this.tipo = tipo;
+  }
 }
+
 Medida.match = function (valor) {
 
   var temperaturas = "(([fF](?:[aA](?:[hH](?:[rR](?:[eE](?:[nN](?:[hH](?:[eE](?:[iI](?:[tT])?)?)?)?)?)?)?)?)?)" +
