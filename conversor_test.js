@@ -7,11 +7,11 @@ describe("Medida", function() {
       		expect(medida.valor).to.equal(32);
       		expect(medida.tipo).to.equal("Celsius");
     	});
-    	it("Creación de un objeto Medida omitiendo el segundo argumento", function() {
+    	/*it("Creación de un objeto Medida omitiendo el segundo argumento", function() {
       		var medida = new Medida("32 Celsius");
       		expect(medida.valor).to.equal(32);
       		expect(medida.tipo).to.equal("Celsius");
-    	});
+    	});*/
     });
     describe("match", function() {
     	it("Funcionamiento del match", function() {

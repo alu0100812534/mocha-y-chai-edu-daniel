@@ -1,7 +1,7 @@
 
 function Medida (valor, tipo) {
 
-  if(!tipo) {
+  /*if(!tipo) {
     var reg_exp = XRegExp('^(?<valor_re> [+-]?\\d+(\\.\\d+)?([e][+-]?\\d+)?[ ]*) # valor \n' +
                           '(?<tipo_re> [a-zA-Z]+)                                # tipo  \n'
                           , 'xi');
@@ -10,10 +10,10 @@ function Medida (valor, tipo) {
     this.valor = parseFloat(exp_result.valor_re);
     this.tipo = exp_result.tipo_re;
   } 
-  else {
+  else {*/
     this.valor = valor;
     this.tipo = tipo;
-  }
+  //}
 }
 
 Medida.match = function(valor) {
