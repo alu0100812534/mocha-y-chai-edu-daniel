@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="utf-8">
+  <title>Conversor</title>
+  <meta name="description" content="Conversor de medidas">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/skeleton.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="assets/js/xregexp.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+  <script type="text/javascript" src="assets/js/medida.js"></script>
+  <script type="text/javascript" src="assets/js/temperatura.js"></script>
+>
+  <script type="text/javascript" src="assets/js/hideimage.js"></script>
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+
+</head>
+
+<body>
+  <script type="text/javascript">window.onresize = window_size;</script>
+  <div class="container app">
+    <div class="row" id="title"><h4>Conversor</h4></div>
+    <div class="row" id="container">
+      <div class="one-half column">
+        <p align="justify" id="text-example">Este conversor te permite hacer conversiones de temperaturas (Celsius, Fahrenheit o Kelvin).</br><b>EJEMPLO:</b> 32C to K para pasar de Celsius a Kelvin (to es opcional).</p>
+        <div id="container-convertion">
+          <label>Introduzca un valor</label>
+          <input id="convert" class="u-full-width" type="text"  autofocus oninput="main();">
+          <label>Conversión</label>
+          <div id="text-converted"><span class="output" id="converted"></span></div>
+          <!--<button id="button-convert">CONVERTIR</button>-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+      <div class="container">
+        <div class="row">
+          <a href="http://alu0100825985.github.io./" target="_blank"><img src="assets/images/footer-eduardo.png" id="foot-edu" title="Página Personal de alu0100825985"></a>
+          <a href="http://alu0100812534.github.io./" target="_blank"><img src="assets/images/footer-daniel.png" id="foot-dani" title="Página Personal de alu0100812534"></a>
+          <a href="https://github.com/alu0100825985/object-oriented-programming-in-js-edda" target="_blank"><img src="assets/images/footer-github.png" id="foot-gh" title="Repositorio de la Práctica"></a>
+          <a href="https://campusvirtual.ull.es/1516/course/view.php?id=178" target="_blank"><img src="assets/images/footer-campus.png" id="foot-cpl" title="Campus Virtual de la Asignatura"></a>
+        </div>
+      </div>
+  </footer>
+</body>
+</html>
