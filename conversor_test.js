@@ -39,3 +39,13 @@ describe("Medida", function() {
     	});
     });
 });
+
+describe("Temperatura", function() {
+  	describe("constructor", function() {
+    	it("Creación de un objeto Temperatura", function() {
+      		var temperatura = new Temperatura(32, "Celsius");
+      		expect(temperatura.valor).to.equal(32);
+      		expect(temperatura.tipo).to.equal("Celsius");
+    	});
+    });
+});
