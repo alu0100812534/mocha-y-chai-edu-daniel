@@ -49,3 +49,12 @@ describe("Temperatura", function() {
     	});
     });
 });
+
+describe("Celsius", function() {
+  	describe("constructor", function() {
+    	it("Creación de un objeto Celsius", function() {
+      		var celsius = new Celsius(32);
+      		expect(celsius.valor).to.equal(32);
+    	});
+    });
+});
