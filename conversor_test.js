@@ -87,3 +87,22 @@ describe("Fahrenheit", function() {
     	});
     });
 });
+
+describe("Kelvin", function() {
+  	describe("constructor", function() {
+    	it("Creación de un objeto Kelvin", function() {
+      		var kelvin = new Kelvin(32);
+      		expect(kelvin.valor).to.equal(32);
+    	});
+    });
+    describe("funciones to...", function() {
+    	it("Conversión a Celsius (toCelsius)", function() {
+      		var kelvin = new Kelvin(32);
+      		expect(kelvin.toCelsius()).to.equal(-241.14999999999998);
+    	});
+    	it("Conversión a Fahrenheit (toFahrenheit)", function() {
+      		var kelvin = new Kelvin(32);
+      		expect(kelvin.toFahrenheit()).to.equal(-402.07);
+    	});
+    });
+});
