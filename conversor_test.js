@@ -57,4 +57,33 @@ describe("Celsius", function() {
       		expect(celsius.valor).to.equal(32);
     	});
     });
+    describe("funciones to...", function() {
+    	it("Conversión a Fahrenheit (toFahrenheit)", function() {
+      		var celsius = new Celsius(32);
+      		expect(celsius.toFahrenheit()).to.equal(89.6);
+    	});
+    	it("Conversión a Kelvin (toKelvin)", function() {
+      		var celsius = new Celsius(32);
+      		expect(celsius.toKelvin()).to.equal(305.15);
+    	});
+    });
+});
+
+describe("Fahrenheit", function() {
+  	describe("constructor", function() {
+    	it("Creación de un objeto Fahrenheit", function() {
+      		var fahrenheit = new Fahrenheit(32);
+      		expect(fahrenheit.valor).to.equal(32);
+    	});
+    });
+    describe("funciones to...", function() {
+    	it("Conversión a Celsius (toCelsius)", function() {
+      		var fahrenheit = new Fahrenheit(32);
+      		expect(fahrenheit.toCelsius()).to.equal(0);
+    	});
+    	it("Conversión a Kelvin (toKelvin)", function() {
+      		var fahrenheit = new Fahrenheit(32);
+      		expect(fahrenheit.toKelvin()).to.equal(273.15);
+    	});
+    });
 });
