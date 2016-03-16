@@ -13,4 +13,12 @@ describe("Medida", function() {
       		expect(medida.tipo).to.equal("Celsius");
     	});
     });
+    describe("match", function() {
+    	it("Funcionamiento del match", function() {
+      		expect(Medida.match("32C to F").medida).to.equal('32');
+      		expect(Medida.match("32C to F").from).to.equal('C');
+      		expect(Medida.match("32C to F").to).to.equal(' to ');
+      		expect(Medida.match("32C to F").to_o).to.equal('F');
+    	});
+    });
 });

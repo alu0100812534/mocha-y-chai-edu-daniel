@@ -16,7 +16,7 @@ function Medida (valor, tipo) {
   }
 }
 
-Medida.match = function (valor) {
+Medida.match = function(valor) {
 
   var temperaturas = "(([fF](?:[aA](?:[hH](?:[rR](?:[eE](?:[nN](?:[hH](?:[eE](?:[iI](?:[tT])?)?)?)?)?)?)?)?)?)" +
                      "|([cC](?:[eE](?:[lL](?:[sS](?:[iI](?:[uU](?:[sS])?)?)?)?)?)?)" +
@@ -24,9 +24,9 @@ Medida.match = function (valor) {
 
   var cadena = XRegExp('^(\\s*)                                            # espacios \n' +
                        '(?<medida> [+-]?\\d+(\\.\\d+)?([e][+-]?\\d+)?[ ]*) # medida a tomar \n' +
-                       '(?<from> ' + temperaturas + ')                    # Medida de partida \n' +
+                       '(?<from> ' + temperaturas + ')                     # Medida de partida \n' +
                        '(?<to>[ ]+(?:to[ ]+)?)                             # to \n' +
-                       '(?<to_o> ' + temperaturas + ')                    # Medida de llegada \n' +
+                       '(?<to_o> ' + temperaturas + ')                     # Medida de llegada \n' +
                        '(\\s*)$                                            # espacios en blanco \n'
                      , 'xi');
 
@@ -37,6 +37,7 @@ Medida.match = function (valor) {
 Medida.measures = {};
 
 Medida.convertir = function(valor) {
+  
   var measures = Medida.measures;
 
   measures.c  = Celsius;
