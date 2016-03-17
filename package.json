@@ -1,30 +1,22 @@
 {
-  "name": "mocha-chai-sinon",
-  "version": "0.0.0",
-  "description": "See the tutorial at: https://nicolas.perriault.net/code/2013/testing-frontend-javascript-code-using-mocha-chai-and-sinon/",
-  "main": "js/conversor.js",
+  "name": "mocha-y-chai-edu-daniel",
+  "version": "1.0.0",
+  "description": "Este repositorio aloja la práctica de Mocha, Chai y Sinon. Además del uso posterior de blanketjs y el fichero gulpfile.js.",
+  "main": "conversor_test.js",
   "scripts": {
-    "test": "open test.html",
-    "chai": "curl https://raw.githubusercontent.com/chaijs/chai/master/chai.js -o vendor/chai.js",
-    "sinon": "curl http://sinonjs.org/releases/sinon-1.12.2.js -o vendor/sinon-1.12.2.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/crguezl/mocha-chai-sinon--example.git"
+    "url": "git+https://github.com/alu0100825985/mocha-y-chai-edu-daniel.git"
   },
-  "devDependencies" : {
-  },
-  "keywords": [
-    "mocha",
-    "chai",
-    "sinon",
-    "testing",
-    "javascript"
-  ],
-  "author": "Casiano",
+  "author": "\"Eduardo Escobar\"",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/crguezl/mocha-chai-sinon--example/issues"
+    "url": "https://github.com/alu0100825985/mocha-y-chai-edu-daniel/issues"
   },
-  "homepage": "https://github.com/crguezl/mocha-chai-sinon--example"
+  "homepage": "https://github.com/alu0100825985/mocha-y-chai-edu-daniel#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
