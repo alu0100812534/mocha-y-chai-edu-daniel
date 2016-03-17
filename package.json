@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/alu0100825985/mocha-y-chai-edu-daniel#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^1.5.3"
   }
 }
